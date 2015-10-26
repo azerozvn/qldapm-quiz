@@ -1,0 +1,22 @@
+{
+  "name": "qldapm-quiz",
+  "homepage": "https://github.com/azerozvn/qldapm-quiz",
+  "authors": [
+    "Azeroz <nguoichet001@yahoo.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4"
+  }
+}
