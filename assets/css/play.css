@@ -77,12 +77,14 @@
 	background: #00C853;
 }
 
-.play-quiz-box .play-answer .play-answer-item.right .btn-custom{
+.play-quiz-box .play-answer.picked .play-answer-item.right .btn-custom{
+	opacity: 1;
 	color: white;
 	background: #00C853 !important;
 }
 
-.play-quiz-box .play-answer .play-answer-item.wrong .btn-custom{
+.play-quiz-box .play-answer.picked .play-answer-item.wrong .btn-custom{
+	opacity: 1;
 	color: white;
 	background: #e53935 !important;
 }
