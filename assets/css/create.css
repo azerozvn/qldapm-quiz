@@ -65,7 +65,7 @@
 }
 
 .create-quiz-box input:hover, .create-quiz-box input:active, .create-quiz-box input:focus, .create-quiz-box select:hover, .create-quiz-box select:active, .create-quiz-box select:focus, .create-quiz-box textarea:hover, .create-quiz-box textarea:active, .create-quiz-box textarea:focus{
-	border-color: #43A047;
+	border-color: #00C853;
 	outline: 0;
 }
 
@@ -133,6 +133,14 @@
 	padding-right: 60px;
 	margin-bottom: 5px;
 	position: relative;
+}
+
+.quiz-qa .quiz-answer .quiz-answer-item.checked input[type="text"]{
+	border-color: #00C853;
+}
+
+.quiz-qa .quiz-answer .quiz-answer-item.checked .quiz-answer-check{
+	color: #00C853;
 }
 
 .quiz-qa .quiz-answer .quiz-answer-check, .quiz-qa .quiz-answer .remove-mark{
