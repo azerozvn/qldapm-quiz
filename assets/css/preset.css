@@ -7,3 +7,11 @@ body{
 	font-size: 16px;
 	font-family: 'Source Sans Pro', Helvetica, sans-serif;
 }
+
+.play-page, .create-page{
+	width: 800px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	-webkit-box-shadow: 0 0 10px black;
+	box-shadow: 0 0 10px black;
+}
