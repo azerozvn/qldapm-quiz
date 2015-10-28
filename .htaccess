@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule create quiz/php/create.php

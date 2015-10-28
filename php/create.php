@@ -8,6 +8,12 @@
 
 require_once('vn_string-filter.php');
 require_once('load_view.php');
+require_once('conn.php');
+
+if (!isset($_POST['quiz-title'])) {
+    load_view('create', null);
+    return;
+}
 
 $quizTitle = $_POST['quiz-title'];
 $quizDesc = $_POST['quiz-desc'];
@@ -15,10 +21,6 @@ $quizQuestions = $_POST['question'];
 $quizAnswers = $_POST['answer'];
 $quizRightAnswers = $_POST['right-answer'];
 $quizTitleFilted = str_replace(" ", "-", mb_strtolower(vn_str_filter($quizTitle)));
-
-$conn = new PDO("mysql:host=localhost;dbname=quiz", "root", "root");
-$conn->query("set names 'utf8'");
-$conn->query("SET character_set_results=utf8");
 
 // Create transaction
 $conn->beginTransaction();
@@ -31,6 +33,7 @@ if ($conn->query($sql) === false) {
     $quizId = $conn->lastInsertId();
     $quizTitleFilted = $quizTitleFilted . "-" . $quizId;
     $data['PLAY-LINK'] = $quizTitleFilted;
+    $_SESSION['PLAY-LINK'] = $quizTitleFilted;
     // Update link of quiz.
     $sql = "UPDATE quiz SET link='" . $quizTitleFilted . "' WHERE id=" . $quizId;
     if ($conn->query($sql) === false) {
@@ -50,7 +53,7 @@ if ($conn->query($sql) === false) {
 
             // INSERT question answer list
             for ($j = 1; $j <= count($questionAnswer); $j++) {
-                $answerTitle = $questionAnswer[$i];
+                $answerTitle = $questionAnswer[$j];
                 $sql = "INSERT answer(question_id,title) VALUE (" . $questionId . ",'" . $answerTitle . "')";
                 $conn->query($sql);
 
@@ -71,4 +74,5 @@ if ($conn->query($sql) === false) {
 }
 // commit transaction if everything is ok.
 $conn->commit();
+$conn = null;
 load_view('create_success', $data);

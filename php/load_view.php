@@ -7,5 +7,5 @@
  */
 function load_view($viewName, $data)
 {
-    include $viewName.".php";
+    include "view/".$viewName.".php";
 }
