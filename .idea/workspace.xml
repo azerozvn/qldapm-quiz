@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a0e0b92-d2ce-4d1f-a33e-f550cb7131a0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/create.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/play.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/vn_string-filter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/create.html" afterPath="$PROJECT_DIR$/html/create.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/create.js" afterPath="$PROJECT_DIR$/assets/js/create.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/create_fail.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/create_success.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/load_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/create.php" afterPath="$PROJECT_DIR$/php/create.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="quiz.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,30 +31,57 @@
       <file leaf-file-name="create.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/create.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="create.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/create.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3633218">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state vertical-scroll-proportion="-21.583334">
+              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding>
                 <element signature="e#6#86#0#PHP" expanded="true" />
+                <marker date="1446051762801" expanded="true" signature="663:747" placeholder="INSERT INTO ..." />
+                <marker date="1446051762801" expanded="true" signature="985:1042" placeholder="UPDATE quiz ..." />
+                <marker date="1446051762801" expanded="true" signature="1388:1430" placeholder="INSERT INTO ..." />
+                <marker date="1446051762801" expanded="true" signature="1388:1446" placeholder="INSERT INTO ..." />
+                <marker date="1446051762801" expanded="true" signature="1388:1447" placeholder="INSERT INTO ..." />
+                <marker date="1446051762801" expanded="true" signature="1388:1471" placeholder="INSERT INTO ..." />
+                <marker date="1446051762801" expanded="true" signature="2003:2070" placeholder="UPDATE quest..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vn_string-filter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/vn_string-filter.php">
+      <file leaf-file-name="create_fail.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/create_fail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-31.25">
-              <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.23356402">
+              <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create_success.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/create_success.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.875">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="load_view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/load_view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.625">
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -63,8 +90,8 @@
       <file leaf-file-name="play.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/play.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.625">
+              <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -91,6 +118,9 @@
         <option value="$PROJECT_DIR$/php/play.php" />
         <option value="$PROJECT_DIR$/assets/js/create.js" />
         <option value="$PROJECT_DIR$/php/vn_string-filter.php" />
+        <option value="$PROJECT_DIR$/php/load_view.php" />
+        <option value="$PROJECT_DIR$/php/create_fail.php" />
+        <option value="$PROJECT_DIR$/php/create_success.php" />
         <option value="$PROJECT_DIR$/php/create.php" />
       </list>
     </option>
@@ -135,6 +165,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -183,7 +214,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -191,6 +221,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/phpStorm-CC-Helpers/CodeIgniter" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
+    <property name="recentsLimit" value="5" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -234,14 +265,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="15" width="1346" height="728" extended-state="1" />
+    <frame x="10" y="15" width="1346" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16145833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -252,7 +284,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -284,9 +315,57 @@
     <entry file="file://$PROJECT_DIR$/php/create.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="true" />
+            <marker date="1446051762801" expanded="true" signature="663:747" placeholder="INSERT INTO ..." />
+            <marker date="1446051762801" expanded="true" signature="985:1042" placeholder="UPDATE quiz ..." />
+            <marker date="1446051762801" expanded="true" signature="1388:1430" placeholder="INSERT INTO ..." />
+            <marker date="1446051762801" expanded="true" signature="1388:1446" placeholder="INSERT INTO ..." />
+            <marker date="1446051762801" expanded="true" signature="1388:1447" placeholder="INSERT INTO ..." />
+            <marker date="1446051762801" expanded="true" signature="1388:1471" placeholder="INSERT INTO ..." />
+            <marker date="1446051762801" expanded="true" signature="2003:2070" placeholder="UPDATE quest..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/play.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/create.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="54" column="45" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
           <folding>
             <element signature="e#6#86#0#PHP" expanded="true" />
+            <marker date="1446051762801" expanded="true" signature="663:747" placeholder="INSERT INTO ..." />
+            <marker date="1446051762801" expanded="true" signature="985:1042" placeholder="UPDATE quiz ..." />
+            <marker date="1446051762801" expanded="true" signature="1388:1430" placeholder="INSERT INTO ..." />
+            <marker date="1446051762801" expanded="true" signature="1388:1446" placeholder="INSERT INTO ..." />
+            <marker date="1446051762801" expanded="true" signature="1388:1447" placeholder="INSERT INTO ..." />
+            <marker date="1446051762801" expanded="true" signature="1388:1471" placeholder="INSERT INTO ..." />
+            <marker date="1446051762801" expanded="true" signature="2003:2070" placeholder="UPDATE quest..." />
           </folding>
         </state>
       </provider>
@@ -315,14 +394,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/play.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/create.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -333,19 +404,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/vn_string-filter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-31.25">
+        <state vertical-scroll-proportion="0.8442907">
           <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/play.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/load_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/create.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3633218">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="-21.583334">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
             <element signature="e#6#86#0#PHP" expanded="true" />
+            <marker date="1446051762801" expanded="true" signature="663:747" placeholder="INSERT INTO ..." />
+            <marker date="1446051762801" expanded="true" signature="985:1042" placeholder="UPDATE quiz ..." />
+            <marker date="1446051762801" expanded="true" signature="1388:1430" placeholder="INSERT INTO ..." />
+            <marker date="1446051762801" expanded="true" signature="1388:1446" placeholder="INSERT INTO ..." />
+            <marker date="1446051762801" expanded="true" signature="1388:1447" placeholder="INSERT INTO ..." />
+            <marker date="1446051762801" expanded="true" signature="1388:1471" placeholder="INSERT INTO ..." />
+            <marker date="1446051762801" expanded="true" signature="2003:2070" placeholder="UPDATE quest..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/create_success.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.875">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/create_fail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23356402">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
