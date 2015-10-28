@@ -25,16 +25,16 @@
 			<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cumque iste natus. Quibusdam tempora rem accusamus obcaecati doloribus, voluptas iste deserunt cum aperiam, beatae, neque assumenda consequatur ducimus earum non.</span>
 		</div>
 		<div class="create-quiz-box">
-			<form action="" method="POST">
+			<form action="http://localhost/quiz/php/create.php" method="POST">
 				<!-- General -->
 				<div class="quiz-general">
 					<div class="quiz-title">
 						<h3>Tiêu đề Quiz</h3>
-						<input type="text" class="form-control" placeholder="Nhập tiêu đê Quiz ở đây">
+						<input name="quiz-title" type="text" class="form-control" placeholder="Nhập tiêu đê Quiz ở đây">
 					</div>
 					<div class="quiz-description">
 						<h3>Mô tả Quiz</h3>
-						<textarea name="" class="form-control" placeholder="Nhập mô tả Quiz ở đây"></textarea>
+						<textarea name="quiz-desc" name="" class="form-control" placeholder="Nhập mô tả Quiz ở đây"></textarea>
 					</div>
 				</div>
 				<!-- Divider -->
@@ -43,10 +43,10 @@
 				</div>
 				<!-- QA -->
 				<div class="quiz-qa">
-					<div class="quiz-qa-box">
+					<!-- <div class="quiz-qa-box">
 						<div class="quiz-question">
 							<span>1</span>
-							<input type="text" class="form-control" placeholder="Nhập câu hỏi ở đây">
+							<input name="question-title" type="text" class="form-control" placeholder="Nhập câu hỏi ở đây">
 							<i class="fa fa-times remove-mark remove-question"></i>
 						</div>
 						<ul class="quiz-answer">
@@ -66,8 +66,8 @@
 								<a href=""><i class="fa fa-plus"></i> Thêm câu trả lời</a>
 							</li>
 						</ul>
-					</div>
-					
+					</div> -->
+
 					<div class="quiz-question-add">
 						<button class="btn btn-custom" type="button">
 							<i class="fa fa-plus"></i> Thêm câu hỏi
@@ -86,7 +86,7 @@
 			</form>
 		</div>
 	</div>
-	
+
 	<!-- jQuery -->
 	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="../assets/js/create.js"></script>
