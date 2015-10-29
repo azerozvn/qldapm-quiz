@@ -17,6 +17,13 @@ $(document).ready(function() {
     pickAnswer(e.target);
   });
   $('.quiz-question-add > button').click();
+
+  $.validate({
+    modules : 'html5',
+    validateOnBlur: false, // disable validation when input looses focus
+    errorMessagePosition: 'top', // Instead of 'element' which is default
+    scrollToTopOnError: true // Set this property to true if you have a long form
+  });
 });
 
 function addAnswer(target) {
@@ -34,8 +41,8 @@ function addQuestion(target) {
 
 function createAnswer(index, fatherIndex) {
   var item = '<li class="quiz-answer-item"></li>';
-  var input = '<input name="answer[' + fatherIndex + '][' + index + ']" type="text" class="form-control" placeholder="Câu trả lời ' + index + '">';
-  var radio = '<input type="radio" value="' + index + '" name="right-answer[' + fatherIndex + ']" hidden>';
+  var input = '<input data-validation="required" data-validation-error-msg="Bạn chưa điền câu trả lời cho câu hỏi thứ ' + index + '" name="answer[' + fatherIndex + '][' + index + ']" type="text" class="form-control" placeholder="Câu trả lời ' + index + '">';
+  var radio = '<input required data-validation-error-msg="Bạn chưa chọn đáp án cho câu hỏi thứ ' + index + '" type="radio" value="' + index + '" name="right-answer[' + fatherIndex + ']" hidden>';
   var check = '<i class="fa fa-check quiz-answer-check"></i>';
   var remove = '<i class="fa fa-times remove-mark remove-answer"></i>';
   return $(item).append($(input), $(radio), $(check), $(remove));

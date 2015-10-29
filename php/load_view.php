@@ -7,5 +7,8 @@
  */
 function load_view($viewName, $data)
 {
+
+    include "view/header.php";
     include "view/".$viewName.".php";
+    include "view/footer.php";
 }
