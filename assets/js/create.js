@@ -19,10 +19,34 @@ $(document).ready(function() {
   $('.quiz-question-add > button').click();
 
   $.validate({
-    modules : 'html5',
+    modules: 'html5',
     validateOnBlur: false, // disable validation when input looses focus
     errorMessagePosition: 'top', // Instead of 'element' which is default
-    scrollToTopOnError: true // Set this property to true if you have a long form
+    scrollToTopOnError: true, // Set this property to true if you have a long form
+    onSuccess: function(form) {
+      var errorForm = $('<div class="form-error alert alert-danger"><ul></ul></div>');
+      var ul = errorForm.children('ul');
+
+      var pass = true;
+      $('.quiz-qa-box').each(function(index, ele) {
+        var passEach = false;
+        $(ele).find("input[type='radio']").each(function(index, el) {
+          if (el.checked) {
+            passEach = true;
+          }
+        });
+        if (!passEach) {
+          ul.append('<li>Bạn chưa chọn câu trả lời đúng cho câu hỏi thứ ' + (index + 1) + '</li>');
+          pass = false;
+        }
+      });
+      if(!pass){
+        $(form).prepend(errorForm[0].outerHTML);
+        window.scrollTo(0, 0);
+      }
+      console.log(pass);
+      return pass;
+    }
   });
 });
 
@@ -42,7 +66,7 @@ function addQuestion(target) {
 function createAnswer(index, fatherIndex) {
   var item = '<li class="quiz-answer-item"></li>';
   var input = '<input data-validation="required" data-validation-error-msg="Bạn chưa điền câu trả lời cho câu hỏi thứ ' + index + '" name="answer[' + fatherIndex + '][' + index + ']" type="text" class="form-control" placeholder="Câu trả lời ' + index + '">';
-  var radio = '<input required data-validation-error-msg="Bạn chưa chọn đáp án cho câu hỏi thứ ' + index + '" type="radio" value="' + index + '" name="right-answer[' + fatherIndex + ']" hidden>';
+  var radio = '<input type="radio" value="' + index + '" name="right-answer[' + fatherIndex + ']" hidden>';
   var check = '<i class="fa fa-check quiz-answer-check"></i>';
   var remove = '<i class="fa fa-times remove-mark remove-answer"></i>';
   return $(item).append($(input), $(radio), $(check), $(remove));

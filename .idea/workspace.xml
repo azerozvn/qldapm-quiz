@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4a0e0b92-d2ce-4d1f-a33e-f550cb7131a0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/create.js" afterPath="$PROJECT_DIR$/assets/js/create.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/view/create.php" afterPath="$PROJECT_DIR$/php/view/create.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/view/create_fail.php" afterPath="$PROJECT_DIR$/php/view/create_fail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/view/create_success.php" afterPath="$PROJECT_DIR$/php/view/create_success.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/load_view.php" afterPath="$PROJECT_DIR$/php/load_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/view/play.php" afterPath="$PROJECT_DIR$/php/view/play.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="quiz.iws" />
