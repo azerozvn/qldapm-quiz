@@ -42,7 +42,7 @@ $(document).ready(function() {
       });
       if(!pass){
         $(form).prepend(errorForm[0].outerHTML);
-        window.scrollTo(0, 0);
+        $('html, body').animate({ scrollTop: 0 }, 'slow');
       }
       console.log(pass);
       return pass;

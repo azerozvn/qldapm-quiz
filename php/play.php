@@ -30,13 +30,15 @@ if (!isset($_GET['link'])) {
         foreach ($conn->query($sql) as $questionRow) {
             $question = array();
             $questionId = $questionRow['id'];
+            $question['id'] = $questionRow['id'];
             $question['title'] = $questionRow['title'];
             $question['right-answer-id'] = $questionRow['right_answer_id'];
             $question['answer-list'] = array();
 
             $sql = "SELECT * FROM answer WHERE question_id=".$questionId;
             foreach ($conn->query($sql) as $answerRow) {
-                $question['answer-list'][$answerRow['id']] = $answerRow['title'];
+                $question['answer-list'][$answerRow['id']]['id'] = $answerRow['id'];
+                $question['answer-list'][$answerRow['id']]['title'] = $answerRow['title'];
             }
 
             $questionArray[$questionId] = $question;

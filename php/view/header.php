@@ -16,5 +16,7 @@
     <link rel="stylesheet" href="../assets/css/create.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../assets/css/custom.css">
+    <!-- Play CSS -->
+    <link rel="stylesheet" href="../assets/css/play.css">
 </head>
 <body>
