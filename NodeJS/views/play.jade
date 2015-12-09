@@ -1,0 +1,26 @@
+link(rel='stylesheet', href='/stylesheets/play.css')
+.container.play-page(ng-init="init()")
+ .play-heading.text-center
+   h1 {{quiz.title}}
+   b
+     i.fa.fa-rocket
+   span
+     | {{quiz.description}}
+ .play-quiz
+   .play-quiz-box(ng-repeat="question in quiz.questionList")
+     .play-question
+       span {{$index + 1}}.
+       h2 {{question.title}}
+     ul.play-answer(ng-class="{picked : question.picked}")
+       li.play-answer-item(ng-repeat="answer in question.answerList", ng-class="{right: answer.correctPicked, wrong: answer.wrongPicked}")
+         button.btn.btn-custom(ng-click="answerPicked(question, answer, $index)")
+           | {{answer.title}}
+   // Divider
+   .play-divider.text-center
+     i.fa.fa-hourglass-end
+   // Result
+   .play-result.text-center
+     h3
+       | Bạn đã làm đúng được
+       b {{totalRight}}/{{total}}
+     button.btn.btn-custom(type='submit') Tạo Quiz Khác

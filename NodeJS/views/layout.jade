@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+  head
+    title= title
+    link(rel='stylesheet', href='/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/preset.css')
+  
+  body(ng-app="quiz")
+    block content
+    
+    script(src='/javascripts/angular.min.js')
+    script(src='/javascripts/angular-route.min.js')
+    script(src='/javascripts/jquery.min.js')
+    script(src='/bootstrap/js/bootstrap.min.js')
+    script(src='/javascripts/quiz.js')

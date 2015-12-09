@@ -1,0 +1,15 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "ecmaFeatures": {
+    "blockBindings": true,
+    "jsx": true
+  },
+  "rules": {
+    "no-extra-semi": 2,
+    "semi" : 1
+  }
+}

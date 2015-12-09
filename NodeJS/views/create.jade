@@ -1,0 +1,53 @@
+//- extends layout
+//- 
+//- block content
+link(rel='stylesheet', href='/stylesheets/create.css')
+//controller(ng-controller='createPageController', ng-cloak)
+.container.create-page
+  .create-heading.text-center
+    h1 Tạo Quiz
+    b
+      i.fa.fa-heart-o
+    span
+      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cumque iste natus. Quibusdam tempora rem accusamus obcaecati doloribus, voluptas iste deserunt cum aperiam, beatae, neque assumenda consequatur ducimus earum non.
+  .create-quiz-box
+    form(ng-init="init()", ng-model="quiz", ng-submit="quizSubmit()")
+      // General
+      .quiz-general
+        .quiz-title
+          h3 Tiêu đề Quiz
+          input.form-control(name='quiz-title', type='text', placeholder='Nhập tiêu đê Quiz ở đây', ng-model="quiz.title")
+        .quiz-description
+          h3 Mô tả Quiz
+          textarea.form-control(name='quiz-desc', placeholder='Nhập mô tả Quiz ở đây', ng-model="quiz.description")
+      // Divider
+      .create-divider.text-center
+        i.fa.fa-comment-o
+      // QA
+      .quiz-qa
+        .quiz-qa-box(ng-repeat='question in quiz.questionList')
+          .quiz-question
+            span {{$index + 1}}
+            input.form-control(name='question-title', type='text',ng-model="question.title", placeholder='Nhập câu hỏi ở đây')
+            i.fa.fa-times.remove-mark.remove-question(ng-click="removeQuestion(quiz.questionList, $index)")
+          ul.quiz-answer
+            li.quiz-answer-item(ng-repeat='answer in question.answerList', ng-class="{checked: answer.isCorrect}")
+              input.form-control(type='text', placeholder='Câu trả lời {{$index + 1}}', ng-model="answer.title")
+              i.fa.fa-check.quiz-answer-check(ng-click="answerPicked(question.answerList, $index)")
+              i.fa.fa-times.remove-mark.remove-answer(ng-click="removeAnswer(question.answerList, $index)")
+            li.quiz-answer-add(ng-click="createAnswer(question.answerList)")
+              a(href='')
+                i.fa.fa-plus
+                |  Thêm câu trả lời
+        quiz-question-add
+          button.btn.btn-custom(type='button',ng-click="createQuestion(quiz.questionList)")
+            i.fa.fa-plus
+            |  Thêm câu hỏi
+      // Divider
+      .create-divider.text-center
+        i.fa.fa-pencil
+      // Finish
+      .create-finish.text-center
+        h3 Cảm thấy không còn câu hỏi nữa?
+        button.btn.btn-custom(type='submit') Hoàn tất
+// jQuery

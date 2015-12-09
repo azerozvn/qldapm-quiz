@@ -1,0 +1,146 @@
+/* Heading */
+
+.play-heading{
+	margin-bottom: 20px;
+}
+
+.play-heading h1{
+	font-weight: 300;
+}
+
+.play-heading b{
+	width: 60%;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+}
+
+.play-heading i{
+	display: inline-block;
+	position: relative;
+	padding: 5px 10px;
+	background: white;
+	font-size: 24px;
+	z-index: 1;
+}
+
+.play-heading b:after{
+	content: "";
+	width: 100%;
+	display: block;
+	border-bottom: 1px solid black;
+	position: absolute;
+	margin-top: -17px;
+}
+
+.play-heading span{
+	width: 90%;
+	display: block;
+	margin: 10px auto 0 auto;
+}
+
+/* Quiz Box */
+
+.play-quiz{
+	padding: 15px;
+}
+
+.play-quiz-box .play-question span, .play-quiz-box .play-question h2{
+	display: inline-block;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.play-quiz-box .play-answer{
+	margin: 0;
+	font-size: 0;
+	display: block;	
+	list-style-type: none;
+}
+
+.play-quiz-box .play-answer .play-answer-item{
+	width: 50%;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.play-quiz-box .play-answer .play-answer-item:nth-child(odd){
+	padding-right: 5px;
+}
+
+.play-quiz-box .play-answer .play-answer-item:nth-child(even){
+	padding-left: 5px;
+}
+
+.play-quiz-box .play-answer .play-answer-item .btn-custom:hover, .play-quiz-box .play-answer .play-answer-item .btn-custom:focus, .play-quiz-box .play-answer .play-answer-item .btn-custom:active {
+	color: white;
+	background: #00C853;
+}
+
+.play-quiz-box .play-answer.picked .play-answer-item.right .btn-custom{
+	opacity: 1;
+	color: white;
+	background: #00C853 !important;
+}
+
+.play-quiz-box .play-answer.picked .play-answer-item.wrong .btn-custom{
+	opacity: 1;
+	color: white;
+	background: #e53935 !important;
+}
+
+.play-quiz-box .play-answer .play-answer-item .btn-custom{
+	width: 100%;
+	font-size: 16px;
+	border-radius: 0;
+	border: 1px solid #999;
+	background: transparent;
+}
+
+.play-divider{
+	width: 100%;
+	margin: 20px auto;
+	position: relative;
+}
+
+.play-divider i{
+	z-index: 1;
+	color: #999;
+	font-size: 24px;
+	padding: 5px 10px;
+	background: white;
+	position: relative;
+}
+
+.play-divider:after{
+	width: 100%;
+	content: "";
+	display: block;
+	margin-top: -17px;
+	position: absolute;
+	border-bottom: 1px solid #999;
+}
+
+.play-result{
+	margin-bottom: 10px;
+}
+
+.play-result h3{
+	font-weight: 300;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.play-result h3 b{
+	display: block;
+	font-size: 40px;
+	margin-top: 10px;
+}
+
+.play-result .btn-custom{
+	width: 60%;
+	color: white;
+	padding: 6px;
+	font-size: 24px;
+	background: #f44336;
+}
