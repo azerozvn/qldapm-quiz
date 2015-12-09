@@ -66,3 +66,4 @@
         </form>
     </div>
 </div>
+<script src="../assets/js/create.js"></script>

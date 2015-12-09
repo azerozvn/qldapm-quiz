@@ -10,6 +10,7 @@ require_once('vn_string-filter.php');
 require_once('load_view.php');
 require_once('conn.php');
 
+
 if (!isset($_POST['quiz-title'])) {
     load_view('create', null);
     return;
@@ -20,7 +21,7 @@ $quizDesc = $_POST['quiz-desc'];
 $quizQuestions = $_POST['question'];
 $quizAnswers = $_POST['answer'];
 $quizRightAnswers = $_POST['right-answer'];
-$quizTitleFilted = str_replace(" ", "-", mb_strtolower(vn_str_filter($quizTitle)));
+$quizTitleFilted = str_replace(" ", "-", mb_strtolower(vn_str_filter($quizTitle).));
 
 // Create transaction
 $conn->beginTransaction();

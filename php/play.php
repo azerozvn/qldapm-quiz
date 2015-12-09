@@ -9,6 +9,7 @@
 require_once('load_view.php');
 require_once('conn.php');
 
+$data['title'] = "Quiz | Play";
 if (!isset($_GET['link'])) {
     load_view('404', null);
     return;
@@ -17,17 +18,18 @@ if (!isset($_GET['link'])) {
     $quizTitle = "";
     $quizDesc = "";
     $questionArray = array();
-
+    $isExist = false;
     // Get quiz
-    $sql = "SELECT * FROM quiz WHERE quiz.link = 'tieu-de-quiz-55'";
+    $sql = "SELECT * FROM quiz WHERE quiz.link = '". $playLink."'";
     foreach ($conn->query($sql) as $quizRow) {
         $quizTitle = $quizRow['title'];
         $quizDesc = $quizRow['description'];
         $quizId = $quizRow['id'];
-
+        $isExist = true;
         // Get question
         $sql = "SELECT * FROM question WHERE quiz_id=" . $quizId;
         foreach ($conn->query($sql) as $questionRow) {
+
             $question = array();
             $questionId = $questionRow['id'];
             $question['id'] = $questionRow['id'];
@@ -43,6 +45,10 @@ if (!isset($_GET['link'])) {
 
             $questionArray[$questionId] = $question;
         }
+    }
+    if(!$isExist){
+      load_view('404', null);
+      return;
     }
 
     $data['quiz-title'] = $quizTitle;

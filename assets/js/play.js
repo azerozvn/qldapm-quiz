@@ -20,7 +20,6 @@ function pickAnswer(target){
 	// if (!($(item).hasClass('right'))){
 	// 	$(item).addClass('wrong');
 	// };
-	console.log(answers.indexOf(answer));
 	if(answers.indexOf(answer) > -1){
 		$(item).addClass('right');
 		rightHTML.innerHTML = ++right;
@@ -32,6 +31,9 @@ function pickAnswer(target){
 	});
 	remain--;
 	if (remain <= 0){
-		$('#result-modal').modal('show');
+		// $("#result-total").html(right + "/" + total);
+		// console.log(right + "/" + total);
+		// $('#result-modal').modal('show');
+		window.location.href = window.location.href+"#result"; 
 	}
 }

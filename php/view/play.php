@@ -43,7 +43,7 @@ $questionArray = $data['quiz-question'];
             <i class="fa fa-hourglass-end"></i>
         </div>
         <!-- Result -->
-        <div class="play-result text-center">
+        <div class="play-result text-center" id="result">
             <h3>
                 Bạn đã làm đúng được
                 <b><span id="right">0</span>/<span id="total">0</span></b>
@@ -60,7 +60,7 @@ $questionArray = $data['quiz-question'];
         <h4 class="modal-title">Kết quả</h4>
       </div>
       <div class="modal-body">
-        <span>Bạn đã trả lời đúng: </span><span id="result-total"></span><span>câu hỏi.</span>
+        <span>Bạn đã trả lời đúng: </span><h3 id="result-total" style="display:inline-block; color: #f44336;"></h3><span> câu hỏi.</span>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
@@ -72,3 +72,4 @@ $questionArray = $data['quiz-question'];
 <script type="text/javascript">
   var answers = [ <?php foreach ($questionArray as $question) { echo $question['right-answer-id'] . ","; } ?> ];
 </script>
+<script src="../assets/js/play.js"></script>
